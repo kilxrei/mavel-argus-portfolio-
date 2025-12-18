@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- 1. Mobile Optimization -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 2. SEO Title Tag -->
+<title>Mavel Argus | Artist & BSIT Web Development Student Portfolio</title>
+
+<!-- 3. Meta Description -->
+<meta name="description" content="Personal portfolio website of Mavel Argus, a 4th-year BSIT Web Development student and artist from Northern Iloilo State University. Explore my artworks and creative projects.">
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Comic Sans MS", sans-serif;
+    background: linear-gradient(to bottom, #c8f7dc, #b3e6f5);
+    color: #2e4e3d;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #f0fff8;
+    border-radius: 15px;
+    border: 3px solid #9ad6be;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+  }
+
+  header {
+    background: linear-gradient(to right, #9ad6be, #b3e6f5);
+    border-radius: 12px 12px 0 0;
+    padding: 15px;
+    text-align: center;
+    color: #2e4e3d;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.2em;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #b3e6f5;
+    padding: 10px;
+    border-bottom: 3px solid #9ad6be;
+  }
+
+  nav button {
+    background: #9ad6be;
+    border: none;
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #2e4e3d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  nav button:hover {
+    background: #7cc8a3;
+    color: white;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .profile-pic {
+    display: block;
+    margin: 0 auto 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #9ad6be;
+    background-color: #d9f8e8;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #9ad6be;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .buttons a:hover {
+    background-color: #7cc8a3;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #9ad6be;
+  }
+
+  .friends-list {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .friends-list a {
+    display: inline-block;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: #2e4e3d;
+    font-weight: bold;
+    background-color: #c8f7dc;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+
+  .friends-list a:hover {
+    background-color: #9ad6be;
+    color: white;
+  }
+
+  footer {
+    text-align: center;
+    background: #b3e6f5;
+    padding: 10px;
+    border-radius: 0 0 12px 12px;
+    font-size: 0.9em;
+    color: #2e4e3d;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <header>
+    <!-- 4. Proper H1 Heading -->
+    <h1>Hi! I’m Mavel</h1>
+
+    <!-- 5. Supporting keyword-rich description -->
+    <p>Artist & BSIT Web Development Student Portfolio</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('gallery')">Gallery</button>
+    <button onclick="showSection('friends')">Friends</button>
+  </nav>
+
+  <section id="about">
+
+    <!-- 6. Image Optimization with ALT Text -->
+    <img 
+      src="https://i.ibb.co/Vcns1CFm/IMG20251121100645.jpg" 
+      alt="Mavel Argus - Artist and BSIT Web Development Student from NISU" 
+      class="profile-pic"
+    >
+
+    <h2 style="text-align:center;">About Me</h2>
+
+    <!-- 7. Keyword-optimized content (natural, not forced) -->
+    <p style="text-align:center; max-width: 700px; margin: 0 auto;">
+      Hi! I’m <strong>Mavel Argus</strong>, a 21-year-old artist who loves to draw and explore creative ideas. I enjoy turning my imagination into colorful illustrations that bring joy, emotion, and stories to life. When I’m not sketching, I love listening to music, enjoying nature, and learning new art techniques to improve my craft.
+      <br><br>
+      I’m currently studying at <strong>Northern Iloilo State University (NISU)</strong> as a 4th-year <strong>BSIT Web Development student</strong>. Being both an artist and a tech student inspires me to blend creativity with digital design, allowing me to build visually appealing and meaningful projects. This personal portfolio website is my space to share my artworks and creative journey.
+    </p>
+
+    <div class="buttons">
+      <a href="https://www.facebook.com/kilxrei" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/kilxrei" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <section id="gallery" style="display:none;">
+    <h2 style="text-align:center;">My Artworks</h2>
+    <div class="gallery">
+      <img src="https://i.ibb.co/Mk0j1NZ6/Untitled50-Restored-20251111083401.png" alt="Digital artwork by Mavel Argus">
+      <img src="https://i.ibb.co/QFG9Gv5q/Untitled57-20251111083501.png" alt="Illustration artwork by Mavel Argus">
+      <img src="https://i.ibb.co/s98bcmzR/Untitled68-Restored-20251111083440.png" alt="Creative digital art by Mavel Argus">
+      <img src="https://i.ibb.co/9kYYnpxF/Untitled39-20251111083520.png" alt="Artwork portfolio piece by Mavel Argus">
+    </div>
+  </section>
+
+  <section id="friends" style="display:none;">
+    <h2 style="text-align:center;">Friends</h2>
+    <p style="text-align:center;">Here are some of my amazing friends! Check out their websites below:</p>
+    <div class="friends-list">
+      <a href="https://mylenvilla.netlify.app/" target="_blank">Mylen Villa</a>
+      <a href="https://jhonaswebsite.netlify.app/" target="_blank">Jhonna Mae Santander</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Mavel Argus | Artist & BSIT Web Development Student
+  </footer>
+
+</div>
+
+<script>
+  function showSection(sectionId) {
+    document.querySelectorAll("section").forEach(sec => sec.style.display = "none");
+    document.getElementById(sectionId).style.display = "block";
+  }
+</script>
+
+</body>
+</html>
